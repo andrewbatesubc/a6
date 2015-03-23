@@ -1,0 +1,18 @@
+initialize solution array sol to be nxn
+
+minSTS(L, W)
+	n = size of W
+	for i from 0 to n
+		for j from 0 to i
+			solutionhelper[i, j]
+	return min(row n)
+
+solutionhelper(L, W, i, j)
+	if j == 0
+		soln[i][0] = STShelper(Words, L, 0, i)
+	else
+		soln[i][j] = min(row j-1) + STShelper(W, L, j+1 to i)
+
+STShelper(Words, L, start, end)
+	calculate the STS of a line
+
